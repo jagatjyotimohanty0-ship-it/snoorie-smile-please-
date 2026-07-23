@@ -65,6 +65,7 @@ color:#444;
 }
 
 
+
 button{
 
 padding:14px 25px;
@@ -81,8 +82,20 @@ font-size:16px;
 
 cursor:pointer;
 
+margin-top:15px;
+
+box-shadow:0 5px 15px rgba(255,79,163,0.4);
+
+transition:0.3s;
+
 }
 
+
+button:hover{
+
+transform:scale(1.05);
+
+}
 
 #scanBox{
 
@@ -430,13 +443,305 @@ Jagat
 
 <br>
 Lifetime mere saath rehna. ❤️
+<br><br>
 
+<button onclick="showExtra()">
+❤️ SEE EXTRA FINDINGS
+</button>
 
 `;
 
 }
 
+function showExtra(){
 
+let box=document.getElementById("scanBox");
+
+
+box.innerHTML=`
+
+<h2>❤️ EXTRA FINDINGS</h2>
+
+<br>
+
+❤️ Heartbeat:
+<br>
+Fast
+
+<br><br>
+
+Reason:
+<br>
+Snoor detected. 🤭
+
+
+<br><br>
+
+🏡 Safe Place Found:
+
+<br>
+
+→ Mere dil mein. 🤍
+
+
+<br><br>
+
+<button onclick="showNote()">
+💌 OPEN SECRET NOTE
+</button>
+
+
+`;
+
+}
+function showNote(){
+
+let box=document.getElementById("scanBox");
+
+
+box.innerHTML=`
+
+<h2>💌 SECRET NOTE</h2>
+
+<br>
+
+Pata hai...
+
+<br><br>
+
+Kabhi kabhi lagta hai,
+meri life ki sabse achhi notification tum thi. ❤️
+
+<br><br>
+
+Aur aaj bhi...
+
+<br><br>
+
+meri favourite person...
+<br>
+meri favourite smile...
+<br>
+meri favourite feeling...
+
+<br><br>
+
+sirf tum ho. ❤️
+
+
+<br><br>
+
+<button onclick="showSurprise()">
+😂 START SURPRISE CHECK
+</button>
+
+
+`;
+
+}
+function showSurprise(){
+
+let box=document.getElementById("scanBox");
+
+
+box.innerHTML=`
+
+<h2>😂 SURPRISE CHECK</h2>
+
+<br>
+
+Checking...
+
+<br><br>
+
+Kya Snoor duniya ki
+<br>
+sabse pyari ladki hai?
+
+<br><br>
+
+YES ✅
+
+<br><br>
+
+YES ✅
+
+<br><br>
+
+YES ✅
+
+<br><br>
+
+Searching another answer...
+
+<br><br>
+
+Error ❌
+
+<br>
+
+Aur koi option hi nahi mila. 😂❤️
+
+
+<br><br>
+
+<button onclick="showWarning()">
+⚠️ SEE IMPORTANT NOTICE
+</button>
+
+
+`;
+
+}
+function showWarning(){
+
+let box=document.getElementById("scanBox");
+
+
+box.innerHTML=`
+
+<h2>⚠️ IMPORTANT NOTICE</h2>
+
+<br>
+
+Rona strictly banned. 🚫😭
+
+<br><br>
+
+Agar tum royi...
+
+<br><br>
+
+To ek ladka udhar bahut pareshaan ho jayega.
+
+<br><br>
+
+Naam:
+
+<br>
+
+Jagat. 🥺❤️
+
+
+<br><br>
+
+<button onclick="showResult()">
+🩺 VIEW FINAL RESULT
+</button>
+
+
+`;
+
+}
+function showResult(){
+
+let box=document.getElementById("scanBox");
+
+
+box.innerHTML=`
+
+<h2>🩺 FINAL RESULT</h2>
+
+<br>
+
+Diagnosis:
+
+<br>
+
+Tum officially bahut zyada precious ho. 🥹
+
+<br><br>
+
+Treatment:
+
+<br>
+
+🤍 Unlimited Virtual Hugs
+
+<br><br>
+
+💋 Forehead Kisses (Pending 😌)
+
+<br><br>
+
+❤️ Lifetime Love
+
+<br><br>
+
+😊 Aur ek cute si smile...
+
+<br>
+
+sirf mere liye.
+
+
+<br><br>
+
+<button onclick="finalSurprise()">
+🙈 DON'T CLICK (VERY DANGEROUS)
+</button>
+
+
+`;
+
+}
+function finalSurprise(){
+
+let box=document.getElementById("scanBox");
+
+
+box.innerHTML=`
+
+<h2>🎉🎉🎉</h2>
+
+<br>
+
+😂 Haha! Mujhe pata tha tum click karogi.
+
+<br><br>
+
+Ab smile aa gayi na? ❤️
+
+<br><br>
+
+Mission Completed. ✅
+
+<br><br>
+
+🌞 Good Morning Baby ☀️
+
+<br><br>
+
+Promise me...
+
+<br><br>
+
+Aaj chahe kuch bhi ho,
+
+<br>
+
+Smile karna mat bhoolna.
+
+<br><br>
+
+Kyuki tumhari ek smile...
+
+<br>
+
+Mera pura din beautiful bana deti hai. ❤️
+
+<br><br>
+
+I Love You So Much,
+
+<br>
+
+Snoor. 🌙🤍
+
+
+`;
+
+}
 </script>
 
 
