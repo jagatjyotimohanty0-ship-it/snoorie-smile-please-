@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Good Morning Baby ❤️</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+
+body{
+
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:linear-gradient(135deg,#ff9ecf,#9fdcff);
+
+}
+
+
+.container{
+
+width:90%;
+max-width:420px;
+
+padding:30px;
+
+text-align:center;
+
+background:rgba(255,255,255,0.3);
+
+border-radius:25px;
+
+backdrop-filter:blur(10px);
+
+}
+
+
+h1{
+
+color:#ff2f92;
+margin-bottom:20px;
+
+}
+
+
+p,h3{
+
+margin:12px;
+
+color:#444;
+
+}
+
+
+button{
+
+padding:14px 25px;
+
+border:none;
+
+border-radius:30px;
+
+background:#ff4fa3;
+
+color:white;
+
+font-size:16px;
+
+cursor:pointer;
+
+}
+
+
+#scanBox{
+
+margin-top:25px;
+
+font-size:18px;
+
+color:#ff2f92;
+
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1>
+🌞 Good Morning Baby ❤️
+</h1>
+
+
+<h3>
+Today's Date:
+</h3>
+
+
+<p>
+23-07-2026 ❤️
+</p>
+
+
+<p>
+Aaj ka din officially tumhari smile ke naam. 😊
+</p>
+
+
+<h3>
+Ready for your Daily Smile Scan?
+</h3>
+
+
+<button onclick="startScan()">
+▶️ START SCAN
+</button>
+
+
+<div id="scanBox"></div>
+
+
+</div>
+
+
+
+<script>
+
+
+function startScan(){
+
+
+let box=document.getElementById("scanBox");
+
+
+let steps=[
+
+"🤖 Scanner Loading...",
+
+"Smile Scanner Starting...",
+
+"█░░░░░░░░░ 10%<br>Tumhari profile search ho rahi hai... 👀",
+
+"████░░░░░░ 40%<br>Secret information collect ho rahi hai... 🤫",
+
+"███████░░░ 70%<br>Heart connection verify ho raha hai... ❤️",
+
+"██████████ 100%<br>Scan Complete! ✅"
+
+];
+
+
+let i=0;
+
+
+let timer=setInterval(()=>{
+
+
+box.innerHTML=steps[i];
+
+i++;
+
+
+if(i==steps.length){
+
+clearInterval(timer);
+
+setTimeout(showReport,1500);
+
+}
+
+
+},1500);
+
+
+
+}
+
+
+
+function showReport(){
+
+let box=document.getElementById("scanBox");
+
+
+box.innerHTML=`
+
+<h2>📋 Final Report</h2>
+
+<br>
+
+👤 Name:
+<br>
+Snoor ❤️
+
+<br><br>
+
+🌸 Status:
+<br>
+Meri Sabse Favorite Person
+
+<br><br>
+
+✨ Cuteness Level:
+<br>
+Infinite ♾️
+
+<br><br>
+
+😊 Smile Power:
+<br>
+Ek smile se mera pura din ban jata hai.
+
+
+<br><br>
+
+<button onclick="showPolice()">
+🚔 CHECK LOVE POLICE DATABASE
+</button>
+
+`;
+
+}
+
+
+
+function showPolice(){
+
+let box=document.getElementById("scanBox");
+
+
+box.innerHTML=`
+
+<h2>🚔 LOVE POLICE DATABASE</h2>
+
+<br>
+
+🚨 Crime Detected:
+<br>
+❤️ Dil Chori
+
+<br><br>
+
+🕵️ Prime Suspect:
+<br>
+Snoor 🤭
+
+<br><br>
+
+👤 Victim:
+<br>
+Jagat
+
+
+<br><br>
+
+📌 Evidence:
+
+<br>
+• Cute Smile 😊
+
+<br>
+• Innocent Face 🥺
+
+<br>
+• Beautiful Eyes ✨
+
+
+<br><br>
+
+⚖️ Punishment:
+
+<br>
+Lifetime mere saath rehna. ❤️
+
+
+`;
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
